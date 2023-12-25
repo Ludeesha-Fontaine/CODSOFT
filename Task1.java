@@ -16,18 +16,18 @@ public class Task1{
         //random instance
         Random randValue = new Random();
 
-        //set correct status
-        boolean guessedCorrectlyStatus = false;
-
-        //set next random value
-        RandomResult = randValue.nextInt(maxValue)+1;
-
         System.out.println("\n\nWelcome to the Number Game..\n.................................");
         System.out.println("\nGame Rules:-..There are only 2 Game Rounds,.and a round consists of 3 attempts..\n");
 
         //set number of rounds as 2
         for(int numberOfRounds=1; numberOfRounds<3; numberOfRounds++){
         
+            //set next random value
+            RandomResult = randValue.nextInt(maxValue)+1;
+
+             //set correct status
+            boolean guessedCorrectlyStatus = false;
+            
             //set number of attempts
             int numberOfAttempts = 0;
             
