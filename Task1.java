@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class NumberGame{
+public class Task1{
     public static void main(String[] args){
 
         //declaring variables
@@ -16,7 +16,7 @@ public class NumberGame{
         //random instance
         Random randValue = new Random();
 
-        //set correct status 
+        //set correct status
         boolean guessedCorrectlyStatus = false;
 
         //set number of attempts
@@ -27,7 +27,7 @@ public class NumberGame{
 
         //loop until the guessed value is correct
         while(!guessedCorrectlyStatus && numberOfAttempts < 3){
-            System.out.println("Guess a number between 1 and 50: ");
+            System.out.print("Guess a number between 1 and 50: ");
 
             //guess a value by user
             userGuess = reader.nextInt();
@@ -45,7 +45,10 @@ public class NumberGame{
                 System.out.println("Yes, you guessed the number..");
                 guessedCorrectlyStatus = true;
             }
+            //increment number of attempts by 1
+            numberOfAttempts++;
         }        
+        
         if(guessedCorrectlyStatus){
             System.out.println("Congratulations!..The correct number was "+RandomResult);
         }
