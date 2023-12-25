@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class task1{
+public class Task1{
     public static void main(String[] args){
 
         //declaring variables
