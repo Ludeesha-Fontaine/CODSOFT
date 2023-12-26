@@ -25,8 +25,9 @@ public class Task2{
             if(subjectMarks < 0 || subjectMarks > 100){
                 System.out.println(outOfBoundStatus);
                 i--;
+            }else{
+                total += subjectMarks;
             }
-            total += subjectMarks;
         }
         average = total / 5;
         if(average >= 75 ){
